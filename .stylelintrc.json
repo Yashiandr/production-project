@@ -1,7 +1,9 @@
 {
     "extends": "stylelint-config-standard-scss",
-    "rules":{
-        "indentation": [4],
+    "rules": {
+        "indentation": [
+            4
+        ],
         "number-leading-zero": "never",
         "selector-class-pattern": null
     }

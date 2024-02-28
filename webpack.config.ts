@@ -24,8 +24,8 @@ export default (env: BuildEnv) => {
     });
 
     if (isDev) {
-        config.plugins.push(new ReactRefreshPlugin());
-        config.plugins.push(new webpack.HotModuleReplacementPlugin());
+        // config.plugins.push(new ReactRefreshPlugin());
+        // config.plugins.push(new webpack.HotModuleReplacementPlugin());
     }
 
     return config;

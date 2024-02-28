@@ -1,21 +1,11 @@
 {
-    "editor.formatOnSave": true,
-    "eslint.enable": true,
     "eslint.autoFixOnSave": true,
-    "eslint.alwaysShowStatus": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
-    },
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "autoFix": true,
     "stylelint.config": null,
     "i18n-ally.localesPaths": [
         "public/locales",
         "src/shared/config/i18n"
     ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
 }
