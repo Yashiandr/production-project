@@ -1,6 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
-import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
+// import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 import { BuildEnv, BuildPaths } from './config/build/types/config';
 
