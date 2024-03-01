@@ -23,10 +23,6 @@ export default (env: BuildEnv) => {
         port: PORT,
     });
 
-    if (isDev) {
-        // config.plugins.push(new ReactRefreshPlugin());
-        // config.plugins.push(new webpack.HotModuleReplacementPlugin());
-    }
 
     return config;
 };
