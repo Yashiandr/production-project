@@ -4,7 +4,7 @@ module.exports = {
         es2021: true,
         jest: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb-base', 'plugin:i18next/recommended', 'plugin:storybook/recommended', 'plugin:storybook/recommended', 'plugin:storybook/recommended'],
+    extends: ['plugin:react/recommended', 'airbnb-base', 'plugin:i18next/recommended'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -43,6 +43,7 @@ module.exports = {
                 markupOnly: true,
                 ignoreAttribute: ['data-testid', 'to'],
             }],
+        'react/display-name': [1, { ignoreTranspilerName: false }],
     },
     globals: {
         __IS_DEV__: true,

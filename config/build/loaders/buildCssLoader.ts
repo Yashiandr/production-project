@@ -1,4 +1,4 @@
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 export function buildCssLoader(isDev: boolean) {
     return {
@@ -19,5 +19,4 @@ export function buildCssLoader(isDev: boolean) {
             'sass-loader',
         ],
     };
-
 }

@@ -21,6 +21,5 @@ export const LoaderLight: Story = {
 export const LoaderDark: Story = {
     args: {
     },
-    decorators: [ThemeDecorator(Theme.DARK)]
+    decorators: [ThemeDecorator(Theme.DARK)],
 };
-

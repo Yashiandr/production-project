@@ -17,7 +17,7 @@ export const Primary: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.PRIMARY,
-        to: '/'
+        to: '/',
     },
 };
 
@@ -25,7 +25,7 @@ export const Secondary: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.SECONDARY,
-        to: '/'
+        to: '/',
     },
 };
 
@@ -33,7 +33,7 @@ export const Red: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.RED,
-        to: '/'
+        to: '/',
     },
 };
 
@@ -41,7 +41,7 @@ export const PrimaryDark: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.PRIMARY,
-        to: '/'
+        to: '/',
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };
@@ -50,7 +50,7 @@ export const SecondaryDark: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.SECONDARY,
-        to: '/'
+        to: '/',
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };
@@ -59,7 +59,7 @@ export const RedDark: Story = {
     args: {
         children: 'Text',
         theme: AppLinkTheme.RED,
-        to: '/'
+        to: '/',
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };

@@ -1,5 +1,4 @@
 {
-    "eslint.autoFixOnSave": true,
     "stylelint.config": null,
     "i18n-ally.localesPaths": [
         "public/locales",
@@ -8,4 +7,12 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": "explicit"
     },
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript",
+        "typescript",
+        "javascriptreact",
+        "typescriptreact"
+    ]
 }
