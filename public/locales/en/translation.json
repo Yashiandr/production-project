@@ -1,7 +1,9 @@
 {
-    "Язык": "English",
-    "Короткий Язык": "En",
-    "Страница не найдена": "Page not found",
-    "Главная страница": "Main Page",
-    "О сайте": "About Us"
+  "Язык": "English",
+  "Короткий Язык": "En",
+  "Страница не найдена": "Page not found",
+  "Главная страница": "Main Page",
+  "О сайте": "About Us",
+  "increment": "increment",
+  "decrement": "decrement"
 }
