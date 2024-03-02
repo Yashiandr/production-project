@@ -4,6 +4,7 @@
   "Страница не найдена": "Page not found",
   "Главная страница": "Main Page",
   "О сайте": "About Us",
-  "increment": "increment",
-  "decrement": "decrement"
+  "Введите username": "Enter username",
+  "Введите пароль": "Enter пароль",
+  "Войти": "Enter"
 }
