@@ -1,13 +1,15 @@
-import React, { Suspense } from 'react';
-import './styles/index.scss';
+import React, { Suspense, useState } from 'react';
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { Navbar } from 'widgets/Navbar';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Sidebar } from 'widgets/Sidebar';
+import { Modal } from 'shared/ui/Modal/Modal';
 import { AppRouter } from './providers/router';
 
 const App = () => {
     const { theme } = useTheme();
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className={classNames('app', {}, [theme, 'cls2', 'cls3'])}>
