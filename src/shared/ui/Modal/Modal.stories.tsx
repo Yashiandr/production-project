@@ -17,6 +17,7 @@ export const Normal: Story = {
         isOpen: true,
         children: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam explicabo ipsa voluptas officia cumque quisquam autem pariatur sequi quia, modi aliquam tempore earum doloremque nam animi libero! Cum, aliquam ea',
     },
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 
 export const Dark: Story = {
