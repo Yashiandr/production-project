@@ -13,7 +13,7 @@ export interface ComponentRenderOptions {
 
 export function componentRender(
     component: ReactNode,
-    options: ComponentRenderOptions,
+    options: ComponentRenderOptions = {},
 ) {
     const {
         route = '/',
