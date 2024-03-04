@@ -23,4 +23,6 @@ const ThemeProvider: FC = ({ children }) => {
     );
 };
 
+ThemeProvider.displayName = 'ThemeProvider';
+
 export default ThemeProvider;
