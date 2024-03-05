@@ -1,12 +1,15 @@
 {
-  "Язык": "English",
-  "Короткий Язык": "En",
-  "Страница не найдена": "Page not found",
-  "Главная страница": "Main Page",
-  "О сайте": "About Us",
-  "Введите username": "Enter username",
-  "Введите пароль": "Enter пароль",
-  "Войти": "Enter",
-  "Форма авторизации": "Authentification form",
-  "invalid auth": "Invalid login or password"
+  "language": "English",
+  "short language": "En",
+  "Page not found": "Page not found",
+  "Main page": "Main Page",
+  "About page": "About Us",
+  "enter username": "Enter username",
+  "enter password": "Enter пароль",
+  "enter": "Enter",
+  "exit": "Exit",
+  "unexpected error": "Unexpected error has occurred",
+  "auth form": "Authentification form",
+  "invalid auth": "Invalid login or password",
+  "reload page": "Reload page"
 }

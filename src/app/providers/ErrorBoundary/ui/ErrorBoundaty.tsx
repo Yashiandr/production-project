@@ -17,13 +17,11 @@ class ErrorBoundary
     }
 
     static getDerivedStateFromError(error: Error) {
-        // Update state so the next render will show the fallback UI.
         return { hasError: true };
     }
 
     // eslint-disable-next-line class-methods-use-this
     componentDidCatch(error: Error, errorinfo: ErrorInfo) {
-        // You can also log the error to an error reporting service
         console.log(error, errorinfo);
     }
 
@@ -32,7 +30,6 @@ class ErrorBoundary
         const { children } = this.props;
 
         if (hasError) {
-            // You can render any custom fallback UI
             return (
                 <Suspense fallback={''}>
                     <PageError />

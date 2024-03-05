@@ -12,7 +12,7 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ className }: NavbarProps) => {
-    const { t } = useTranslation('main');
+    const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
     const authData = useSelector(selectUserAuthData);
     const dispatch = useDispatch();
@@ -37,7 +37,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     className={cls.links}
                     onClick={onLoguot}
                 >
-                    {t('Выйти')}
+                    {t('exit')}
                 </Button>
             </div>
         );
@@ -50,12 +50,12 @@ export const Navbar = ({ className }: NavbarProps) => {
                 className={cls.links}
                 onClick={onShowModal}
             >
-                {t('Войти')}
+                {t('enter')}
             </Button>
-            <LoginModal
+            {isAuthModal && (<LoginModal
                 isOpen={isAuthModal}
                 onClose={onCloseModal}
-            />
+            />)}
         </div>
     );
 };
