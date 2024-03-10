@@ -2,6 +2,7 @@ import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { userActions } from 'entities/User';
 import { Suspense, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
