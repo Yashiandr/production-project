@@ -5,7 +5,8 @@
         "src/shared/config/i18n"
     ],
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit"
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.stylelint": "explicit",
     },
     "eslint.validate": [
         "vue",
@@ -14,6 +15,12 @@
         "typescript",
         "javascriptreact",
         "typescriptreact"
+    ],
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "scss",
     ],
     "typescript.tsdk": "node_modules/typescript/lib",
     "i18n-ally.keystyle": "nested",

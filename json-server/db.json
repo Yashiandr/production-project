@@ -26,6 +26,14 @@
     }
   ],
   "profile": {
+    "first": "Никита",
+    "lastname": "Андряшин",
+    "age": 25,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Saint-Petersburg",
+    "username": "admin",
+    "avatar": "https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg",
     "name": "typicode"
   }
 }

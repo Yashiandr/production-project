@@ -20,11 +20,6 @@
     opacity: 1;
 }
 
-.link {
-    text-wrap: nowrap;
-    width: 0;
-}
-
 .collapsed {
     width: var(--sidebar-width-collapsed);
 
@@ -32,28 +27,12 @@
         flex-direction: column;
         align-items: center;
     }
-
-    .link {
-        opacity: 0;
-        width: 0;
-        transition: opacity .2s;
-    }
 }
 
 .collapsedBtn {
     position: absolute;
     right: -32px;
     bottom: 32px;
-}
-
-.item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.icon {
-    fill: var(--inverted-primary-color);
 }
 
 .items {
