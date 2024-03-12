@@ -1,6 +1,16 @@
 {
     "profile": "Profile",
     "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save",
     "your name": "Your name",
-    "your lastname": "Your lastname"
+    "your lastname": "Your lastname",
+    "your age": "Your age",
+    "city": "City",
+    "username": "Edit username",
+    "avatar": "Edit link to avatar",
+    "currency": "Select currency",
+    "country": "Select country",
+    "an error occurred while uploading the profile": "An error occurred while uploading the profile",
+    "please reload page": "Please reload page"
 }

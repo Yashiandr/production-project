@@ -21,15 +21,13 @@ export const Primary: Story = {
 
 export const onlyTitle: Story = {
     args: {
-        ...Primary.args,
-        text: null,
+        title: 'Title lorem ipsum',
     },
 };
 
 export const onlyText: Story = {
     args: {
-        ...Primary.args,
-        title: null,
+        text: 'Description lorem ipsum',
     },
 };
 
@@ -37,22 +35,6 @@ export const PrimaryDark: Story = {
     args: {
         title: 'Title lorem ipsum',
         text: 'Description lorem ipsum',
-    },
-    decorators: [ThemeDecorator(Theme.DARK)],
-};
-
-export const onlyTitleDark: Story = {
-    args: {
-        ...Primary.args,
-        text: null,
-    },
-    decorators: [ThemeDecorator(Theme.DARK)],
-};
-
-export const onlyTextDark: Story = {
-    args: {
-        ...Primary.args,
-        title: null,
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };

@@ -7,23 +7,25 @@ import ProfileIcon from 'shared/assets/icons/profile-20-20.svg';
 export interface SidabarItemType {
     path: string;
     text: string;
-    Icon: React.VFC<React.SVGProps<SVGSVGElement>>
+    Icon: React.VFC<React.SVGProps<SVGSVGElement>>;
+    authOnly?: boolean
 }
 
 export const SidebarItemsList: SidabarItemType[] = [
     {
         path: RoutePath.main,
         Icon: MainIcon,
-        text: 'Главная',
+        text: 'Main page',
     },
     {
         path: RoutePath.about,
         Icon: AboutIcon,
-        text: 'О сайте',
+        text: 'About page',
     },
     {
         path: RoutePath.profile,
         Icon: ProfileIcon,
-        text: 'Профиль',
+        text: 'Profile page',
+        authOnly: true,
     },
 ];
