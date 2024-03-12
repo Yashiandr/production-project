@@ -1,3 +1,5 @@
+export { ValidateProfileError } from './model/types/profile';
+
 export {
     Profile,
     ProfileSchema,
@@ -20,3 +22,4 @@ export { selectProfileData } from './model/selectors/selectProfileData/selectPro
 export { selectProfileIsLoading } from './model/selectors/selectProfileIsLoading/selectProfileIsLoading';
 export { selectProfileError } from './model/selectors/selectProfileError/selectProfileError';
 export { selectProfileReadonly } from './model/selectors/selectProfileReadonly/selectProfileReadonly';
+export { selectProfileValidateErrors } from './model/selectors/selectProfileValidateErrors/selectProfileValidateErrors';

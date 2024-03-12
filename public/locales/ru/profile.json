@@ -11,6 +11,11 @@
     "avatar": "Введите ссылку на аватар",
     "currency": "Укажите валюту",
     "country": "Укажите страну",
+    "server error when saving data": "Ошибка сервера при сохранении данных",
+    "incorrect firstname or lastname": "Некорректные имя или фамилия",
+    "data is not speecified": "Данные не указаны",
+    "incorrect age": "Некорректный возраст",
+    "incorrent country": "Некорректная страна",
     "an error occurred while uploading the profile": "Произошла ошибка при загрузке профиля",
     "please reload page": "Попробуйте обновить страницу"
 }

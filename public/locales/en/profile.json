@@ -11,6 +11,11 @@
     "avatar": "Edit link to avatar",
     "currency": "Select currency",
     "country": "Select country",
+    "server error when saving data": "Server error when saving data",
+    "incorrect firstname or lastname": "Incorrect firstname or lastname",
+    "data is not speecified": "Data is not speecified",
+    "incorrect age": "Incorrect age",
+    "incorrent country": "Incorrent country",
     "an error occurred while uploading the profile": "An error occurred while uploading the profile",
     "please reload page": "Please reload page"
 }
