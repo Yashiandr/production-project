@@ -5,7 +5,7 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Input } from './Input';
 
 const meta = {
-    title: 'shared:/Input',
+    title: 'shared/Input',
     component: Input,
 } satisfies Meta<typeof Input>;
 

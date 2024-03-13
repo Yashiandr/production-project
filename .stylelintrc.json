@@ -6,5 +6,6 @@
         ],
         "number-leading-zero": "never",
         "selector-class-pattern": null
-    }
+    },
+    "ignoreFiles": ".fttemplates/**/*"
 }
