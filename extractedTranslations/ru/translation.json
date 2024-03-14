@@ -11,6 +11,8 @@
   "avatar": "avatar",
   "cancel": "cancel",
   "city": "city",
+  "country": "country",
+  "currency": "currency",
   "data is not specified": "data is not specified",
   "decrement": "decrement",
   "edit": "edit",

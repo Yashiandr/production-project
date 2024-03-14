@@ -9,3 +9,7 @@ export {
 export {
     selectUserAuthData,
 } from './model/selectors/selectUserAuthData';
+
+export {
+    selectUserInited,
+} from './model/selectors/selectUserInited';
