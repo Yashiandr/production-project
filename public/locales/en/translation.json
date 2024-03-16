@@ -13,5 +13,6 @@
   "unexpected error": "Unexpected error has occurred",
   "auth form": "Authentification form",
   "invalid auth": "Invalid login or password",
-  "reload page": "Reload page"
+  "reload page": "Reload page",
+  "there are no comments": "There are no comments"
 }

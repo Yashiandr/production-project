@@ -13,5 +13,6 @@
   "enter username": "Введите username",
   "auth form": "Форма авторизации",
   "invalid auth": "Вы ввели неверный логин или пароль",
-  "reload page": "Обновите страницу"
+  "reload page": "Обновите страницу",
+  "there are no comments": "Комментарии отстутствуют"
 }

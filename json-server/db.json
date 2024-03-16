@@ -127,13 +127,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://pushinka.top/uploads/posts/2023-04/1680944641_pushinka-top-p-avatarki-dlya-shkolnogo-chata-avatarka-ins-16.jpg"
     }
   ],
   "profile": {
