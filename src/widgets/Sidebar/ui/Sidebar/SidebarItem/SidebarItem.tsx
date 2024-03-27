@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { SidabarItemType } from '../../../model/items';
+import { SidebarItemType } from '../../../model/types/sidebar';
 import cls from './SidebarItem.module.scss';
 
 interface SidebarItemProps {
-    item: SidabarItemType;
+    item: SidebarItemType;
     collapsed: boolean;
 }
 

@@ -4,7 +4,7 @@
 }
 
 .header {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -14,4 +14,24 @@
 
 .username {
     margin-left: 10px;
+}
+
+.defaultAvatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--inverted-primary-color);
+
+    .defaultAvatarText {
+        text-transform: uppercase;
+    }
+}
+
+.loading {
+    border: none;
 }

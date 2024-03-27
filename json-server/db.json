@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1024,
       "createdAt": "14.03.2024",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -82,13 +84,15 @@
       ]
     },
     {
-      "id":"2",
+      "id": "2",
       "title": "Javascript №2",
       "subtitle": "Что старого в JS за 2024 год?",
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1024,
       "createdAt": "14.03.2024",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "9",
@@ -98,9 +102,8 @@
             "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
           ]
         }
-
       ]
-  }
+    }
   ],
   "comments": [
     {
@@ -120,6 +123,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Мама, я у себя на сайте",
+      "id": "pfEbD88"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "И я тут был",
+      "id": "cWyaOor"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "123",
+      "id": "Hvczd-j"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Всем привет",
+      "id": "AFAJ4fo"
     }
   ],
   "users": [
@@ -138,15 +165,28 @@
       "avatar": "https://pushinka.top/uploads/posts/2023-04/1680944641_pushinka-top-p-avatarki-dlya-shkolnogo-chata-avatarka-ins-16.jpg"
     }
   ],
-  "profile": {
-    "first": "Никита",
-    "lastname": "Андряшин",
-    "age": 25,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Saint-Petersburg",
-    "username": "admin",
-    "avatar": "https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg",
-    "name": "typicode"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Никита",
+      "lastname": "Андряшин",
+      "age": 25,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Saint-Petersburg",
+      "username": "admin",
+      "avatar": "https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Вася",
+      "lastname": "Пупкин",
+      "age": 7250,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "Pupkin",
+      "avatar": "https://pushinka.top/uploads/posts/2023-04/1680944641_pushinka-top-p-avatarki-dlya-shkolnogo-chata-avatarka-ins-16.jpg"
+    }
+  ]
 }

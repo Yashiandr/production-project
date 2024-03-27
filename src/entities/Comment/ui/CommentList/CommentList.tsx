@@ -23,8 +23,18 @@ export const CommentList = memo((props: CommentListProps) => {
     } = props;
     const { t } = useTranslation();
 
+    if (isLoading) {
+        return (
+            <div className={classNames(cls.CommentList, {}, [className])}>
+                <CommentCard className={cls.comment} isLoading/>
+                <CommentCard className={cls.comment} isLoading/>
+                <CommentCard className={cls.comment} isLoading/>
+            </div>
+
+        );
+    }
+
     return (
-        // eslint-disable-next-line
         <div className={classNames(cls.CommentList, {}, [className])}>
             {comments?.length
                 ? comments.map((comment) => (

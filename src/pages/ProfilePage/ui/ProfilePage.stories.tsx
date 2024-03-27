@@ -24,7 +24,6 @@ const meta = {
                 first: 'Nikita',
                 city: 'stptrsb',
                 currency: Currency.EUR,
-
             },
         },
     })],

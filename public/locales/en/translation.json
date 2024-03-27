@@ -14,5 +14,7 @@
   "auth form": "Authentification form",
   "invalid auth": "Invalid login or password",
   "reload page": "Reload page",
-  "there are no comments": "There are no comments"
+  "there are no comments": "There are no comments",
+  "enter a comment": "Enter a comment",
+  "post": "Post"
 }
