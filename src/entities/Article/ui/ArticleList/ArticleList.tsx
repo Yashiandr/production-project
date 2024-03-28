@@ -23,7 +23,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         view = ArticleView.SMALL,
     } = props;
 
-    const renderArticle = (article: Article) => <ArticleListItem article={article} view={view} />;
+    const renderArticle = (article: Article) => <ArticleListItem key={article.id} article={article} view={view} />;
     const getSkeletons = (view: ArticleView) => (
         <>
             {

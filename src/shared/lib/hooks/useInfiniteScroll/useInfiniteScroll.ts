@@ -7,10 +7,6 @@ export interface UseInfiniteScrollOptions {
 }
 
 export function useInfiniteScroll({ callback, triggerRef, wrapperRef }: UseInfiniteScrollOptions) {
-    if (__PROJECT__ !== 'storybook') {
-        return;
-    }
-
     // eslint-disable-next-line react-hooks/rules-of-hooks
     useEffect(() => {
         let observer: IntersectionObserver | null = null;
