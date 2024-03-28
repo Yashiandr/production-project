@@ -7,6 +7,11 @@ import { ArticleDetails } from './ArticleDetails';
 const article: Article = {
     id: '1',
     title: 'Javascript news',
+    user: {
+        id: '1',
+        username: 'Бимба',
+        avatar: 'https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg',
+    },
     subtitle: 'Что нового в JS за 2024 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1024,
@@ -75,7 +80,7 @@ const article: Article = {
 };
 
 const meta = {
-    title: 'entities/ArticleDetails',
+    title: 'entities/Article/ArticleDetails',
     component: ArticleDetails,
     tags: ['autodocs'],
     decorators: [StoreDecorator({

@@ -9,6 +9,11 @@ const article: Article = {
     subtitle: 'Что нового в JS за 2024 год?',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1024,
+    user: {
+        id: '1',
+        username: 'Бимба',
+        avatar: 'https://catherineasquithgallery.com/uploads/posts/2021-02/1613027767_104-p-oranzhevii-fon-s-lisoi-150.jpg',
+    },
     createdAt: '14.03.2024',
     type: [ArticleType.IT],
     blocks: [
