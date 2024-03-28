@@ -164,3 +164,17 @@ export const LoadingBig: Story = {
     }),
     ],
 };
+
+export const Error: Story = {
+    args: {
+    },
+    decorators: [StoreDecorator({
+        articlesPage: {
+            view: ArticleView.BIG,
+            ids: [],
+            entities: {},
+            error: 'Articles Page Error',
+        },
+    }),
+    ],
+};

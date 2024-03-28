@@ -55,21 +55,24 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
                 <ArticleCodeBlockComponent
                     key={block.id}
                     className={cls.block}
-                    block={block}/>
+                    block={block}
+                />
             );
         case ArticleBlockType.IMAGE:
             return (
                 <ArticleImageBlockComponent
                     key={block.id}
                     className={cls.block}
-                    block={block}/>
+                    block={block}
+                />
             );
         case ArticleBlockType.TEXT:
             return (
                 <ArticleTextBlockComponent
                     key={block.id}
                     className={cls.block}
-                    block={block}/>
+                    block={block}
+                />
             );
         default:
             return null;
@@ -86,13 +89,13 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
 
     if (isLoading) {
         content = (
-            <div>
+            <>
                 <Skeleton className={cls.avatar} width={200} height={200} border={'50%'} />
                 <Skeleton className={cls.title} width={670} height={31} />
                 <Skeleton className={cls.skeleton} width={400} height={31} />
                 <Skeleton className={cls.skeleton} width={'100%'} height={231} />
                 <Skeleton className={cls.skeleton} width={'100%'} height={231} />
-            </div>
+            </>
         );
     } else if (error) {
         content = (
