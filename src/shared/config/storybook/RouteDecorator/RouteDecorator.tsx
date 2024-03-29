@@ -6,7 +6,6 @@ export const RouteDecorator = (story: () => Story) => (
     <BrowserRouter>
         <Suspense fallback=''>
             {story()}
-
         </Suspense>
     </BrowserRouter>
 );

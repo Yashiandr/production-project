@@ -7,10 +7,12 @@ import { loginReducer } from 'features/AuthByUsername/model/slice/loginSlice';
 import { articleDetailsCommentsReducer } from 'pages/ArticleDetaisPage/model/slice/articleDetailsCommentSlice';
 import { articlesPageReducer } from 'pages/ArticlesPage/model/slice/articlesPageSlice';
 import { ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { scrollSaveReducer } from 'widgets/Page';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,
     profile: profileReducer,
+    scrollSave: scrollSaveReducer,
     articleDetails: articleDetailsReducer,
     addCommentForm: addCommentFormReducer,
     articleDetailsComments: articleDetailsCommentsReducer,

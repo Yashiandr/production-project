@@ -1,5 +1,4 @@
 import {
-    AnyAction,
     createEntityAdapter,
     createSlice,
     PayloadAction,
