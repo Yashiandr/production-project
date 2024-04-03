@@ -1,3 +1,16 @@
 {
-    "read": "Read..."
+    "read": "Read...",
+    "sort by": "Sort by",
+    "by": "by",
+    "asc": "asc",
+    "desc": "desc",
+    "created": "date",
+    "title": "name",
+    "views": "views",
+    "search": "Search",
+    "it": "IT",
+    "economics": "Economics",
+    "science": "Science",
+    "all": "All",
+    "articles not found": "Articles not found :<"
 }

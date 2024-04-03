@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ArticleViewSelector } from './ArticleViewSelector';
 
 const meta = {
-    title: 'feature/ArticleViewSelector',
+    title: 'features/Article/ArticleViewSelector',
     component: ArticleViewSelector,
     tags: ['autodocs'],
 } satisfies Meta<typeof ArticleViewSelector>;

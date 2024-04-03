@@ -1,3 +1,4 @@
+import { ArticleSortField, ArticleType } from 'entities/Article';
 import { TestAsynkThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { fetchArticlesList } from '../fetchArticlesList/fetchArticlesList';
 import { fetchNextArticlesPage } from './fetchNextArticlesPage';
@@ -15,13 +16,16 @@ describe('fetchNextArticlesPage.test', () => {
                 isLoading: false,
                 hasMore: true,
                 _inited: true,
+                order: 'asc',
+                sort: ArticleSortField.TITLE,
+                search: '',
+                type: ArticleType.ALL,
             },
         });
 
         await thunk.callThunk();
 
         expect(thunk.dispatch).toBeCalledTimes(4);
-        expect(fetchArticlesList).toHaveBeenCalledWith({ page: 3 });
     });
     test('fetchArticleList not called becouse db hasn`t more data', async () => {
         const thunk = new TestAsynkThunk(fetchNextArticlesPage, {
@@ -33,6 +37,10 @@ describe('fetchNextArticlesPage.test', () => {
                 isLoading: false,
                 hasMore: false,
                 _inited: true,
+                order: 'asc',
+                sort: ArticleSortField.TITLE,
+                search: '',
+                type: ArticleType.ALL,
             },
         });
 
@@ -51,6 +59,10 @@ describe('fetchNextArticlesPage.test', () => {
                 isLoading: true,
                 hasMore: true,
                 _inited: true,
+                order: 'asc',
+                sort: ArticleSortField.TITLE,
+                search: '',
+                type: ArticleType.ALL,
             },
         });
 

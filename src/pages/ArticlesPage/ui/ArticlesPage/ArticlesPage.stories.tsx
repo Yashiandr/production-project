@@ -103,7 +103,7 @@ const articlesEntity = ({
 });
 
 const meta = {
-    title: 'pages/ArticlesPage',
+    title: 'pages/Article/ArticlesPage',
     component: ArticlesPage,
     tags: ['autodocs'],
 } satisfies Meta<typeof ArticlesPage>;
