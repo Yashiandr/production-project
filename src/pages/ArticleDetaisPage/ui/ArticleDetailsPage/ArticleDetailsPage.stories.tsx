@@ -74,6 +74,11 @@ export const Primary: Story = {
     },
     decorators: [StoreDecorator({
         articleDetails: { data: article },
-        articleDetailsComments: { ids, entities: commentsEntitie },
+        articleDetailsPage: {
+            comments: {
+                ids,
+                entities: commentsEntitie,
+            },
+        },
     })],
 };

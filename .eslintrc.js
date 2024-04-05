@@ -48,7 +48,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to'],
+                ignoreAttribute: ['data-testid', 'to', 'target'],
             }],
         'react/display-name': [1, { ignoreTranspilerName: false }],
         'jsx-ally/no-static-element-interations': 'off',
@@ -58,6 +58,7 @@ module.exports = {
         'no-param-reassign': 'off',
         'global-require': 0,
         'no-undef': 'off',
+        'arrow-body-style': 'off',
     },
     globals: {
         __IS_DEV__: true,
