@@ -39,6 +39,13 @@ export const PrimaryDark: Story = {
     decorators: [ThemeDecorator(Theme.DARK)],
 };
 
+export const InvertedTheme: Story = {
+    args: {
+        ...Primary.args,
+        theme: TextTheme.INVERTED,
+    },
+};
+
 export const Error: Story = {
     args: {
         ...Primary.args,

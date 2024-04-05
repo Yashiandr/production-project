@@ -61,7 +61,7 @@ const commentsEntitie = {
 };
 
 const meta = {
-    title: 'pages/ArticleDetailsPage',
+    title: 'pages/Article/ArticleDetailsPage',
     component: ArticleDetailsPage,
 } satisfies Meta<typeof ArticleDetailsPage>;
 

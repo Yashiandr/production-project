@@ -3,5 +3,8 @@
     "an error occurred while uploading the article": "Прооизошла ошибка при загрузке статьи.",
     "comments": "Комментарии",
     "return to articles": "Назад к списку",
-    "recommendations": "Рекомендуем:"
+    "recommendations": "Рекомендуем:",
+    "edit": "Редактировать",
+    "edit article": "Реадктировать статью c ID: ",
+    "create article": "Создать статью"
 }

@@ -3,5 +3,8 @@
     "an error occurred while uploading the article": "An error occurred while uploading the article.",
     "comments": "Comments",
     "return to articles": "Return to articles",
-    "recommendations": "We recommend it:"
+    "recommendations": "We recommend it:",
+    "edit": "Edit",
+    "edit article": "Edit an article with ID: ",
+    "create article": "Create an article"
 }
