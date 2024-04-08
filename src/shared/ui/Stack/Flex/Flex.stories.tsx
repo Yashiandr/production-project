@@ -85,13 +85,13 @@ export const ColumnGap32: Story = {
 export const ColumnAlignStart: Story = {
     args: {
         ...Column.args,
-        aligh: 'start',
+        align: 'start',
     },
 };
 
 export const ColumnAlignEnd: Story = {
     args: {
         ...Column.args,
-        aligh: 'end',
+        align: 'end',
     },
 };

@@ -53,6 +53,20 @@ export const Error: Story = {
     },
 };
 
+export const SizeS = {
+    args: {
+        ...Primary.args,
+        size: TextSize.S,
+    },
+};
+
+export const SizeM = {
+    args: {
+        ...Primary.args,
+        size: TextSize.M,
+    },
+};
+
 export const SizeL = {
     args: {
         ...Primary.args,

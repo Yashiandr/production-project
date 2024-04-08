@@ -90,7 +90,7 @@ const ProfilePage = () => {
     return (
         <DynamicModuleLoader reducers={reducers}>
             <Page className={classNames('', {}, [])}>
-                <VStack aligh={'center'} max justify='center'>
+                <VStack align={'center'} max justify='center'>
                     <ProfilePageHeader />
                     {validateErrors?.length && validateErrors.map((err) => (
                         <Text

@@ -49,7 +49,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'target', 'aligh', 'justify', 'direction'],
+                ignoreAttribute: ['role', 'data-testid', 'to', 'target', 'align', 'justify', 'direction'],
             }],
         'react/display-name': [1, { ignoreTranspilerName: false }],
         'jsx-ally/no-static-element-interations': 'off',
