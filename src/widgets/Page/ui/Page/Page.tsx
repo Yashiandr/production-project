@@ -9,8 +9,8 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useInfiniteScroll } from 'shared/lib/hooks/useInfiniteScroll/useInfiniteScroll';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { useThrottle } from 'shared/lib/hooks/useTrottle/useTrottle';
-import { selectScrollByPath } from 'widgets/Page/model/selectors/scrollSaveSelecor';
-import { scrollSaveActions } from 'widgets/Page/model/slices/scrollSaveSlice';
+import { selectScrollByPath } from '../../model/selectors/scrollSaveSelecor';
+import { scrollSaveActions } from '../../model/slices/scrollSaveSlice';
 import cls from './Page.module.scss';
 
 export interface PageOption {

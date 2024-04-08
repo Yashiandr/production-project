@@ -18,6 +18,7 @@ module.exports = {
         '@typescript-eslint',
         'i18next',
         'react-hooks',
+        'yashiandr-plugin',
     ],
     settings: {
         react: {
@@ -48,7 +49,7 @@ module.exports = {
             'error',
             {
                 markupOnly: true,
-                ignoreAttribute: ['data-testid', 'to', 'target'],
+                ignoreAttribute: ['data-testid', 'to', 'target', 'aligh', 'justify', 'direction'],
             }],
         'react/display-name': [1, { ignoreTranspilerName: false }],
         'jsx-ally/no-static-element-interations': 'off',
@@ -59,6 +60,7 @@ module.exports = {
         'global-require': 0,
         'no-undef': 'off',
         'arrow-body-style': 'off',
+        'yashiandr-plugin/path-checker': 2,
     },
     globals: {
         __IS_DEV__: true,

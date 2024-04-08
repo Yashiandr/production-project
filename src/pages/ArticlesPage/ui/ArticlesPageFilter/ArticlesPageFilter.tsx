@@ -2,7 +2,6 @@ import { ArticleSortField, ArticleType, ArticleView } from 'entities/Article';
 import { ArticleSortSelector } from 'features/ArticleSortSelector';
 import { ArticleTypeTabs } from 'features/ArticleTypeTabs';
 import { ArticleViewSelector } from 'features/ArticleViewSelector';
-import { fetchArticlesList } from 'pages/ArticlesPage/model/services/fetchArticlesList/fetchArticlesList';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -11,6 +10,7 @@ import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
 import { SortOrder } from 'shared/types';
 import { Card } from 'shared/ui/Card/Card';
 import { Input } from 'shared/ui/Input/Input';
+import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
 import {
     selectArticlesPageOrder,
     selectArticlesPageSearch,

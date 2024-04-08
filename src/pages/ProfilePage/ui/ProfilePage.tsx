@@ -22,6 +22,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
 import { Page } from 'widgets/Page';
+import { VStack } from 'shared/ui/Stack';
 import { ProfilePageHeader } from './ProfilePageHeader/ProfilePageHeader';
 
 const reducers: ReducersList = {
@@ -89,28 +90,30 @@ const ProfilePage = () => {
     return (
         <DynamicModuleLoader reducers={reducers}>
             <Page className={classNames('', {}, [])}>
-                <ProfilePageHeader />
-                {validateErrors?.length && validateErrors.map((err) => (
-                    <Text
-                        theme={TextTheme.ERROR}
-                        text={validateErrorTranslates[err]}
-                        key={err}
+                <VStack aligh={'center'} max justify='center'>
+                    <ProfilePageHeader />
+                    {validateErrors?.length && validateErrors.map((err) => (
+                        <Text
+                            theme={TextTheme.ERROR}
+                            text={validateErrorTranslates[err]}
+                            key={err}
+                        />
+                    ))}
+                    <ProfileCard
+                        data={data}
+                        isLoading={isLoading}
+                        error={error}
+                        onChangeFirstname={onChangeFirstname}
+                        onChangeLastname={onChangeLastname}
+                        onChangeAge={onChangeAge}
+                        onChangeCity={onChangeCity}
+                        onChangeAvatar={onChangeAvatar}
+                        onChangeUsername={onChangeUsername}
+                        onChangeCountry={onChangeCountry}
+                        onChangeCurrency={onChangeCurrency}
+                        readonly={readonly}
                     />
-                ))}
-                <ProfileCard
-                    data={data}
-                    isLoading={isLoading}
-                    error={error}
-                    onChangeFirstname={onChangeFirstname}
-                    onChangeLastname={onChangeLastname}
-                    onChangeAge={onChangeAge}
-                    onChangeCity={onChangeCity}
-                    onChangeAvatar={onChangeAvatar}
-                    onChangeUsername={onChangeUsername}
-                    onChangeCountry={onChangeCountry}
-                    onChangeCurrency={onChangeCurrency}
-                    readonly={readonly}
-                />
+                </VStack>
             </Page>
         </DynamicModuleLoader>
     );

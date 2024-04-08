@@ -1,6 +1,4 @@
 import { selectArticleDetailsData } from 'entities/Article';
-import { selectUserAuthData } from 'entities/User';
-import { selectCanEditArticle } from 'pages/ArticleDetaisPage/model/selectors/article';
 import { memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
@@ -8,10 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button } from 'shared/ui/Button/Button';
-import cls from './ArticleDetailsPageHeader.module.scss';
-
-export interface ArticleDetailsPageHeaderOption {
-}
+import { HStack } from 'shared/ui/Stack';
+import { selectCanEditArticle } from '../../model/selectors/article';
 
 interface ArticleDetailsPageHeaderProps {
     className ?: string;
@@ -35,18 +31,17 @@ export const ArticleDetailsPageHeader = memo((props: ArticleDetailsPageHeaderPro
     }, [navigate, article?.id]);
 
     return (
-        <div className={classNames(cls.ArticleDetailsPageHeader, {}, [className])}>
+        <HStack max justify='between' className={classNames('', {}, [className])}>
             <Button onClick={onBackToList}>
                 {t('return to articles')}
             </Button>
             {canEdit && (
                 <Button
-                    className={cls.editBtn}
                     onClick={onEditArticle}
                 >
                     {t('edit')}
                 </Button>)}
-        </div>
+        </HStack>
     );
 });
 
