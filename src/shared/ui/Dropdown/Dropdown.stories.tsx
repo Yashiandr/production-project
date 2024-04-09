@@ -1,31 +1,37 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Button } from '../Button/Button';
 
-import { ListBox } from './ListBox';
+import { Dropdown } from './Dropdown';
 
 const meta = {
-    title: 'shared/ListBox',
-    component: ListBox,
+    title: 'shared/Dropdown',
+    component: Dropdown,
     tags: ['autodocs'],
     args: {
-        defauleValue: 'select a value',
-        onChange: (value) => {},
-        value: undefined,
+        trigger: <Button>Open</Button>,
         items: [
-            { value: '1', content: '123122222222222' },
-            { value: '12', content: '12ssadaaaaaa3', disabled: true },
-            { value: '123', content: '12asadsdkasodkasodkoaskddo3' },
-            { value: '1234', content: '12sddlldldsdlpsldpsldpsldp3' },
+            {
+                content: 'first',
+            },
+            {
+                content: 'second',
+            },
+            {
+                content: 'third',
+            },
         ],
     },
     decorators: [
         (Story) => <div style={{ padding: 300 }}><Story /></div>,
     ],
-} satisfies Meta<typeof ListBox>;
+} satisfies Meta<typeof Dropdown>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Normal: Story = {
+    args: {
+    },
 };
 
 export const topLeft: Story = {
@@ -33,11 +39,13 @@ export const topLeft: Story = {
         direction: 'top left',
     },
 };
+
 export const topRight: Story = {
     args: {
         direction: 'top right',
     },
 };
+
 export const bottomLeft: Story = {
     args: {
         direction: 'bottom left',

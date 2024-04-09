@@ -34,25 +34,15 @@ export const CountrySelect = memo((props: CountrySelectProps) => {
     return (
         <ListBox
             onChange={onChangeHandler}
+            className={className}
             value={value}
             items={options}
             readonly={readonly}
             defauleValue={t('country')}
-            direction='top'
+            direction='top right'
             label={t('country')}
         />
     );
-
-    // return (
-    //     <Select
-    //         className={classNames('', {}, [className])}
-    //         label={t('country')}
-    //         options={options}
-    //         value={value}
-    //         onChange={onChangeHandler}
-    //         readonly={readonly}
-    //     />
-    // );
 });
 
 CountrySelect.displayName = 'CountrySelect';

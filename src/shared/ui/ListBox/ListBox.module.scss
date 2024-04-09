@@ -40,6 +40,15 @@
     opacity: .7;
 }
 
-.optionsTop {
+.optionsTopRight {
     bottom: 100%;
+}
+
+.optionsTopLeft {
+    bottom: 100%;
+    right: 0;
+}
+
+.optionsBottomLeft {
+    right: 0;
 }
