@@ -31,14 +31,6 @@ export const onlyText: Story = {
     },
 };
 
-export const PrimaryDark: Story = {
-    args: {
-        title: 'Title lorem ipsum',
-        text: 'Description lorem ipsum',
-    },
-    decorators: [ThemeDecorator(Theme.DARK)],
-};
-
 export const InvertedTheme: Story = {
     args: {
         ...Primary.args,

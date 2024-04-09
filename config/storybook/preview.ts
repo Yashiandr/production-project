@@ -1,8 +1,8 @@
 import type { Preview } from '@storybook/react';
+import { Theme } from '../../src/app/providers/ThemeProvider';
+import { RouteDecorator } from '../../src/shared/config/storybook/RouteDecorator/RouteDecorator';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { RouteDecorator } from '../../src/shared/config/storybook/RouteDecorator/RouteDecorator';
-import { Theme } from '../../src/app/providers/ThemeProvider';
 
 const preview: Preview = {
     parameters: {
@@ -15,12 +15,22 @@ const preview: Preview = {
         },
     },
     decorators: [
-        // @ts-ignore
-        StyleDecorator,
-        ThemeDecorator(Theme.LIGHT),
-        // @ts-ignore
-        RouteDecorator,
+        StyleDecorator(),
+        ThemeDecorator(),
+        RouteDecorator(),
     ],
+    globalTypes: {
+        theme: {
+            description: 'Global theme for component',
+            defaultValue: Theme.LIGHT,
+            toolbar: {
+                title: 'Theme',
+                icon: 'circlehollow',
+                items: [Theme.LIGHT, Theme.DARK, Theme.ORANGE],
+                dynamicTitle: true,
+            },
+        },
+    },
 };
 
 export default preview;

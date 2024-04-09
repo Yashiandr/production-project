@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { CenterDecorator } from 'shared/config/storybook/CenterDecorator/CenterDecorator';
 import { Button } from '../Button/Button';
 
 import { Dropdown } from './Dropdown';
@@ -22,7 +23,7 @@ const meta = {
         ],
     },
     decorators: [
-        (Story) => <div style={{ padding: 300 }}><Story /></div>,
+        CenterDecorator(),
     ],
 } satisfies Meta<typeof Dropdown>;
 

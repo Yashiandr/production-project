@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { CenterDecorator } from 'shared/config/storybook/CenterDecorator/CenterDecorator';
 
 import { ListBox } from './ListBox';
 
@@ -8,7 +9,7 @@ const meta = {
     tags: ['autodocs'],
     args: {
         defauleValue: 'select a value',
-        onChange: (value) => {},
+        onChange: (newValue) => {},
         value: undefined,
         items: [
             { value: '1', content: '123122222222222' },
@@ -18,7 +19,7 @@ const meta = {
         ],
     },
     decorators: [
-        (Story) => <div style={{ padding: 300 }}><Story /></div>,
+        CenterDecorator(),
     ],
 } satisfies Meta<typeof ListBox>;
 

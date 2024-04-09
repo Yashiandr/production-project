@@ -7,22 +7,26 @@ import { Input } from './Input';
 const meta = {
     title: 'shared/Input',
     component: Input,
+    args: {
+        placeholder: 'Type text',
+        value: '123456',
+    },
 } satisfies Meta<typeof Input>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Primary: Story = {
-    args: {
-        placeholder: 'Type text',
-        value: '123456',
-    },
+export const Normal: Story = {
+};
+
+export const Light: Story = {
     decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 
 export const Dark: Story = {
-    args: {
-        ...Primary.args,
-    },
     decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const Orange: Story = {
+    decorators: [ThemeDecorator(Theme.ORANGE)],
 };

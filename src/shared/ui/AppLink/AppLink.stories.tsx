@@ -37,6 +37,33 @@ export const Red: Story = {
     },
 };
 
+export const PrimaryLight: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.PRIMARY,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.LIGHT)],
+};
+
+export const SecondaryLight: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.SECONDARY,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.LIGHT)],
+};
+
+export const RedLight: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.RED,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.LIGHT)],
+};
+
 export const PrimaryDark: Story = {
     args: {
         children: 'Text',
@@ -62,4 +89,31 @@ export const RedDark: Story = {
         to: '/',
     },
     decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const PrimaryOrange: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.PRIMARY,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.ORANGE)],
+};
+
+export const SecondaryOrange: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.SECONDARY,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.ORANGE)],
+};
+
+export const RedOrange: Story = {
+    args: {
+        children: 'Text',
+        theme: AppLinkTheme.RED,
+        to: '/',
+    },
+    decorators: [ThemeDecorator(Theme.ORANGE)],
 };

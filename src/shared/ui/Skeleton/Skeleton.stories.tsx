@@ -20,6 +20,27 @@ export const Normal: Story = {
     },
 };
 
+export const NormalLight: Story = {
+    args: {
+        ...Normal.args,
+    },
+    decorators: [ThemeDecorator(Theme.LIGHT)],
+};
+
+export const NormalDark: Story = {
+    args: {
+        ...Normal.args,
+    },
+    decorators: [ThemeDecorator(Theme.DARK)],
+};
+
+export const NormalOrange: Story = {
+    args: {
+        ...Normal.args,
+    },
+    decorators: [ThemeDecorator(Theme.ORANGE)],
+};
+
 export const Circle: Story = {
     args: {
         border: '50%',
@@ -28,36 +49,23 @@ export const Circle: Story = {
     },
 };
 
-export const NormalDark: Story = {
+export const CircleLight: Story = {
     args: {
-        width: '100%',
-        height: 200,
+        ...Circle.args,
     },
-    decorators: [ThemeDecorator(Theme.DARK)],
+    decorators: [ThemeDecorator(Theme.LIGHT)],
 };
 
 export const CircleDark: Story = {
     args: {
-        border: '50%',
-        width: 100,
-        height: 100,
+        ...Circle.args,
     },
     decorators: [ThemeDecorator(Theme.DARK)],
 };
 
-export const NormalOrange: Story = {
-    args: {
-        width: '100%',
-        height: 200,
-    },
-    decorators: [ThemeDecorator(Theme.ORANGE)],
-};
-
 export const CircleOrange: Story = {
     args: {
-        border: '50%',
-        width: 100,
-        height: 100,
+        ...Circle.args,
     },
     decorators: [ThemeDecorator(Theme.ORANGE)],
 };

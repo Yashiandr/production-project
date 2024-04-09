@@ -1,11 +1,11 @@
-import { Story } from '@storybook/react';
+import { Story, StoryFn } from '@storybook/react';
 import { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-export const RouteDecorator = (story: () => Story) => (
+export const RouteDecorator = () => (StoryComponent: StoryFn) => (
     <BrowserRouter>
         <Suspense fallback=''>
-            {story()}
+            <StoryComponent />
         </Suspense>
     </BrowserRouter>
 );

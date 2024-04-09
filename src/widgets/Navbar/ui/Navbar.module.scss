@@ -12,6 +12,14 @@
     margin-left: auto;
 }
 
+.dropdown {
+    line-height: 0;
+
+    img {
+        border: 1px solid var(--bg-color);
+    }
+}
+
 .mainLink {
     margin-right: 15px;
 }
