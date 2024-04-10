@@ -7,7 +7,7 @@ const publicApiTemplate = (sliceName) => {
     const schemaName = `${sliceName}Schema`;
     return `export { ${componentName} } from './ui/${componentName}/${componentName}';
 
-export { ${firstCharUpperCase(schemaName)} } from './model/types/${schemaName}';
+export { ${firstCharUpperCase(schemaName)} } from './model/types/${sliceName}';
 `;
 };
 

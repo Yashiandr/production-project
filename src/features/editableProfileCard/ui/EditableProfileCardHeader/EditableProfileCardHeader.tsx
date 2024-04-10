@@ -1,6 +1,3 @@
-import {
-    profileActions, selectProfileData, selectProfileReadonly, updateProfileData,
-} from 'entities/Profile';
 import { selectUserAuthData } from 'entities/User';
 import { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -10,12 +7,16 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { HStack } from 'shared/ui/Stack';
 import { Text } from 'shared/ui/Text/Text';
+import { profileActions } from '../../model/slice/profileSlice';
+import { updateProfileData } from '../../model/service/updateProfileData/updateProfileData';
+import { selectProfileReadonly } from '../../model/selectors/selectProfileReadonly/selectProfileReadonly';
+import { selectProfileData } from '../../model/selectors/selectProfileData/selectProfileData';
 
 interface ProfilePageHeaderProps {
     className?: string;
 }
 
-export const ProfilePageHeader = (props: ProfilePageHeaderProps) => {
+export const EditableProfileCardHeader = (props: ProfilePageHeaderProps) => {
     const {
         className,
     } = props;

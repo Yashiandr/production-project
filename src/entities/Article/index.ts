@@ -1,3 +1,5 @@
+export { articleDetailsReducer } from './model/slice/articleDetailsSlice';
+
 export {
     ArticleDetails,
 } from './ui/ArticleDetails/ArticleDetails';

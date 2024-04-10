@@ -1,11 +1,11 @@
 import { StoryFn } from '@storybook/react';
 import { StateSchema, StoreProvider } from 'app/providers/StoreProvider';
-import { articleDetailsReducer } from 'entities/Article/model/slice/articleDetailsSlice';
-import { profileReducer } from 'entities/Profile/model/slice/profileSlice';
-import { addCommentFormReducer } from 'features/addCommentForm/model/slice/addCommentFormSlice';
-import { loginReducer } from 'features/AuthByUsername/model/slice/loginSlice';
-import { articleDetailsPageReducer } from 'pages/ArticleDetaisPage/model/slice';
-import { articlesPageReducer } from 'pages/ArticlesPage/model/slice/articlesPageSlice';
+import { articleDetailsReducer } from 'entities/Article';
+import { addCommentFormReducer } from 'features/addCommentForm';
+import { loginReducer } from 'features/AuthByUsername';
+import { profileReducer } from 'features/editableProfileCard';
+import { articleDetailsPageReducer } from 'pages/ArticleDetaisPage';
+import { articlesPageReducer } from 'pages/ArticlesPage';
 import { ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { scrollSaveReducer } from 'widgets/Page';
 

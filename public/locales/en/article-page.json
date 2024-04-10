@@ -12,5 +12,6 @@
     "economics": "Economics",
     "science": "Science",
     "all": "All",
-    "articles not found": "Articles not found :<"
+    "articles not found": "Articles not found :<",
+    "error": "Error occurred while uploading articles"
 }

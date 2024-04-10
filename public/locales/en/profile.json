@@ -17,5 +17,6 @@
     "incorrect age": "Incorrect age",
     "incorrent country": "Incorrent country",
     "an error occurred while uploading the profile": "An error occurred while uploading the profile",
-    "please reload page": "Please reload page"
+    "please reload page": "Please reload page",
+    "error id": "Profile not found"
 }

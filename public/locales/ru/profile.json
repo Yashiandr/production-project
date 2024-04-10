@@ -17,5 +17,6 @@
     "incorrect age": "Некорректный возраст",
     "incorrent country": "Некорректная страна",
     "an error occurred while uploading the profile": "Произошла ошибка при загрузке профиля",
-    "please reload page": "Попробуйте обновить страницу"
+    "please reload page": "Попробуйте обновить страницу",
+    "error id": "Профиль не найден"
 }
