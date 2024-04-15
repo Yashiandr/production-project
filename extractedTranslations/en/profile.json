@@ -1,6 +1,23 @@
 {
   "Country": "",
   "Currency": "",
+  "an error occurred while uploading the profile": "",
+  "avatar": "",
+  "cancel": "",
+  "city": "",
   "country": "",
-  "currency": ""
+  "currency": "",
+  "data is not specified": "",
+  "edit": "",
+  "incorrect age": "",
+  "incorrect counrty": "",
+  "incorrect firstname or lastname": "",
+  "please reload page": "",
+  "profile": "",
+  "save": "",
+  "server error when saving data": "",
+  "username": "",
+  "your age": "",
+  "your lastname": "",
+  "your name": ""
 }
