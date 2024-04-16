@@ -42,16 +42,22 @@ export function Dropdown(props: DropdownProps) {
             </Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, [mapDirecionClass[direction]])}>
                 {items.map((item, index) => {
-                    const content = ({ active }: {active:boolean}) => (
-                        <button
-                            className={classNames(cls.item, { [cls.active]: active })}
+                    const content = ({ active }: {active:boolean}) => {
+                        const buttonMods = {
+                            [cls.active]: active,
+                            [cls.first]: index === 0,
+                            [cls.last]: index === items.length - 1,
+                        };
+                        return (<button
+                            className={classNames(cls.item, buttonMods)}
                             onClick={item.onClick}
                             type='button'
                             disabled={item.disabled}
                         >
                             {item.content}
                         </button>
-                    );
+                        );
+                    };
                     if (item.href) {
                         return (
                             <Menu.Item as={AppLink} to={item.href} key={index} disabled={item.disabled}>

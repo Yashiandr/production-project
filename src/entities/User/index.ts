@@ -8,8 +8,14 @@ export {
 } from './model/types/user';
 export {
     selectUserAuthData,
-} from './model/selectors/selectUserAuthData';
+} from './model/selectors/selectUserAuthData/selectUserAuthData';
 
 export {
     selectUserInited,
-} from './model/selectors/selectUserInited';
+} from './model/selectors/selectUserInited/selectUserInited';
+
+export {
+    isUserAdmin,
+    isUserManager,
+    selectUserRoles,
+} from './model/selectors/roleSelectors';

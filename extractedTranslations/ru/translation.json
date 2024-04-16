@@ -1,6 +1,7 @@
 {
   "": "",
   "About page": "About page",
+  "Admin page": "Admin page",
   "Country": "Country",
   "Currency": "Currency",
   "Main page": "Main page",
@@ -10,6 +11,7 @@
   "Yashiandr": "Yashiandr",
   "Yashiandr App": "Yashiandr App",
   "Yashiandr app": "Yashiandr app",
+  "admin-panel": "admin-panel",
   "all": "all",
   "an error occurred while uploading the article": "an error occurred while uploading the article",
   "an error occurred while uploading the profile": "an error occurred while uploading the profile",
@@ -46,6 +48,7 @@
   "increment": "increment",
   "invalid auth": "invalid auth",
   "it": "it",
+  "not access": "not access",
   "please reload page": "please reload page",
   "post": "post",
   "profile": "profile",
